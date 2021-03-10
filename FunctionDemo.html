@@ -1,0 +1,30 @@
+<html>
+<head>
+
+<script>
+
+function tax(prod_cat, prod_name,price)
+{
+if(prod_cat=="Mobile")
+{
+total_price=price*112.5/100;
+alert("Total price of  "+prod_name+" is $ "+total_price)
+}
+if(prod_cat=="Medicine")
+{
+total_price=price;
+alert("Total price of  "+prod_name+" is $ "+total_price)
+}
+}
+</script>
+<body>
+<script>
+prod_cat="Medicine";
+tax(prod_cat,"Paracetamol",8000);
+prod_cat="Mobile";
+tax(prod_cat,"GV3",3000);
+tax(prod_cat,"XV5",5000);
+
+</script>
+</body>
+</html>
